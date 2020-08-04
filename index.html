@@ -1,0 +1,140 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>PizzaSquad</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, user-scalable=1" />
+        <link href="https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco|Gloria+Hallelujah|Kaushan+Script|Luckiest+Guy|Akronim|Lacquer|Simonetta|Indie+Flower&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
+        <link rel="stylesheet" href="css/styles.css" type="text/css" media="all">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/scripts.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ensures optimal rendering on mobile devices. -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Optimal Internet Explorer compatibility -->
+    </head>
+    <body>
+        <div class="jumbotron">
+            <marquee behavior="slide" direction="down"> <h1 class="display-0">PizzaSquad</h1></marquee>
+        </div>
+        <div class="menu">
+            <marquee scrollamount="13">
+                <h4><img class="mySlides "id="img1" src="images/bg.png"> 
+                    Welcome to PIZZASQUAD.  We are The Best Pizza Place In Town and We Have Amazing Offers.  
+                    So go on ahead and order <i class="fas fa-smile-beam    "></i> 
+                    <img class="mySlides "id="img1" src="images/bg.png"> </h4>   
+            </marquee>
+                    
+        </div>
+        <div class="main-content">
+            <div class="pizza-form">
+                <form id="myForm" method="post" action="index.php" >
+                    <div class="form-group">
+                      <label for="size">Pizza Size</label><br>
+                      <select name="size" id="size" required>
+                        <option disabled selected value> -- Choose Pizza Size -- </option>
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                      </select>
+                      
+                    </div>
+
+                    <div class="form-group">
+                        <label for="crust">Crust Type</label><br>
+                        <select id="crust" required>
+                            <option disabled selected value> -- Choose Type of Crust -- </option>
+                            <option value="Crispy">Crispy</option>
+                            <option value="Stuffed">Stuffed</option>
+                            <option value="Gluten Free Crispy">Gluten Free Crispy</option>
+                            <option value="Gluten Free Stuffed">Gluten Free Stuffed</option>
+                        </select>
+  
+                    </div>
+                    <div class="form-group">
+                        <label for="toppings">Toppings</label><br>
+                        <input type="checkbox" name="toppings" id="tp1" value="BBQ Chicken">BBQ Chicken <br>
+                        <input type="checkbox" name="toppings" id="tp2" value="BBQ Beef">BBQ Beef <br>
+                        <input type="checkbox" name="toppings" id="tp3" value="Vegetarian">Vegetarian <br>
+                        <input type="checkbox" name="toppings" id="tp4" value="Shrimp">Shrimp
+  
+                    </div>
+                    <div class="form-group">
+                      <label for="noOfPizzas">Number of Pizzas</label>
+                      <input type="number" name="noOfPizzas" id="noOfPizzas" class="form-control" min="1" placeholder="How many pizzas do you want?" aria-describedby="helpId" required>
+                      
+                    </div>
+                    <div class="form-group">
+                      <label for="delivery">Do you want delivery?</label></label><br>
+                      
+                      <div class="delivery-options">
+                        <h3><input type="radio" name="delivery" id="Yes" value="Yes">Yes</h3>
+                        <h3><input type="radio" name="delivery" id="No" value="No"> No</h3> 
+                      </div>
+                       
+                      <div class="hide-delivery">
+                          <div class="form-group">
+                            <label for="location">Delivery Location</label>
+                            <input type="text" name="location" id="location" class="form-control" placeholder="Write delivery Location" aria-describedby="helpId"><br>
+                            <input type="button" id="locationbtn" value="Confirm Location">
+                            
+                          </div>
+
+                      </div>
+                      
+                    </div>
+                    <div class="form-group">
+                      <input type="submit" value="Checkout">
+                    </div>
+                </form>
+                
+            </div>
+            
+        </div>
+        <div class="pizza-details">
+                
+            <div class="hide-order">
+                <h2>Squorder Details</h2><br>
+                
+                <div class="orderdetails">
+                    <h5 class="order"></h5><br>
+                    <h3><u>TOTAL</u></h3>
+                    <h3><i class="fas fa-dollar-sign    "></i>  <span class="ordertotal"></span>   <i class="fas fa-dollar-sign    "></i></h3><br>
+                    
+                </div>
+                <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+                <script>paypal.Buttons().render('body');</script>
+                
+            </div>
+
+        </div>
+
+  
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAZ4WHL76gXDVYFY2vlSGl5tJP4ZmgZp6o",
+    authDomain: "pizza-inn-64e95.firebaseapp.com",
+    databaseURL: "https://pizza-inn-64e95.firebaseio.com",
+    projectId: "pizza-inn-64e95",
+    storageBucket: "pizza-inn-64e95.appspot.com",
+    messagingSenderId: "306952600015",
+    appId: "1:306952600015:web:831f3bf9706fa6cf1bbaba",
+    measurementId: "G-DF1FZM6DG6"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+        
+    </body>
+</html>

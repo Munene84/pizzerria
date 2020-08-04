@@ -1,0 +1,261 @@
+body{
+    background: url(../images/pizza-on-brown-wooden-table-3768007.jpg);
+    background-size: cover;
+    
+    width: 100%;
+    
+}
+
+.main-content{
+    display: inline-block;
+    width: 100%;
+}
+
+.pizza-form{
+    width:50%;
+    background-color: rgba(0, 99, 71, 0.3);
+    font-family: "Sue Ellen Francisco";
+    background-size: contain;
+    font-size:larger;
+    color: black;
+    font-weight: bolder;
+    margin:0 auto;
+
+}
+.pizza-details{
+    margin: 0 auto;
+    width: 50%;
+    
+    background-color: rgba(255, 99, 71,0.3);
+}
+
+.mySlides {
+    
+    width: 40%;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+label{
+    font-weight: bolder;
+}
+select{
+    width: 70%;
+    background-color: white;
+    border-radius: 25px;
+    border-color: tomato;
+}
+input[type="number"],input[type="text"]{
+    border-radius: 25px;
+    border-color: tomato;
+    width: 70%;
+}
+
+form{
+    
+    padding-left: 30px;
+}
+
+.hide-order{
+    display: none;
+    padding-left: 300px; 
+    font-family: "Sue Ellen Francisco";
+    background: url(../images/notepad.png);
+    background-size: cover;
+    background-position: center;
+    margin:0 auto;
+    width: 100%;
+}
+.hide-order h5,h3{
+    font-size: x-large;
+    font-weight: bolder;
+    color: black;
+    
+}
+.hide-order h2{
+    font-weight: bolder;
+    text-decoration: wavy black underline;
+    color: black;
+}
+
+.hide-delivery{
+    display: none;
+    
+}
+.gallery{
+    display: inline-block;
+    width: 100%;  
+    
+}
+
+
+.jumbotron{
+    
+    background-color:rgba(0, 0, 0,0.4);
+    background-size: cover;
+    font-family: 'Gloria Hallelujah';
+    text-align: center;
+    letter-spacing: 30px;
+    color: #f3dfcd;
+    height: 170px;
+    padding-left: 600px;
+  
+}
+
+.order{
+    white-space: pre-wrap;
+}
+.ordertotal{
+    font-size: xx-large;
+}
+input[type="submit"],input[type="button"]{
+    border-radius: 25px;
+    border-color: tomato;
+    width: 20%;
+    background-image: url(../images/bg.png);
+    font-weight: bolder;
+}
+input[type="submit"]{
+    margin: auto;
+    text-align: center;
+}
+input[type="button"]{
+    width:50%;
+    height: 20%;
+    font-size: x-large;
+}
+.menu img{
+    width: 6%;
+}
+.menu{
+    font-family: "Sue Ellen Francisco";
+    width: 100%; 
+    
+}
+@media all and (max-width:600px){
+    body{
+        
+        display: flexbox;
+        padding: 0px;
+        width: 100%;
+        
+    }
+    .main-content,.jumbotron,.menu,.pizza-details{
+        width: 100%;
+        
+        float: left;
+        display: flexbox;
+        /* height: 535px; */
+        padding: 0px;
+        
+    }
+    .jumbotron h1{
+        text-align: center;
+        padding: 0px;
+        letter-spacing: 0px;
+    }
+    .pizza-form,.pizza-details{
+        width: 100%;
+    }
+    .hide-order{
+        padding: 0px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    body,div{
+        
+        display: flexbox;
+        padding: 0px;
+        width: 100%;
+        
+    }
+    .main-content,.jumbotron,.menu,.pizza-details{
+        width: 100%;
+        
+        float: left;
+        display: flexbox;
+        
+        padding: 0px;
+        
+    }
+    .jumbotron h1{
+        text-align: center;
+        padding: 0px;
+        letter-spacing: 0px;
+    }
+    .pizza-form,.pizza-details{
+        width: 100%;
+    }
+    .hide-order{
+        padding: 0px;
+        text-align: center;
+    }
+
+}
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    body{
+        
+        display: flexbox;
+        padding: 0px;
+        width: 100%;
+        
+    }
+    .main-content,.jumbotron,.menu,.pizza-details{
+        width: 100%;
+        
+        float: left;
+        display: flexbox;
+        
+        padding: 0px;
+        
+    }
+    .jumbotron h1{
+        text-align: center;
+        padding: 0px;
+        letter-spacing: 0px;
+    }
+    .pizza-form,.pizza-details{
+        width: 100%;
+    }
+    .hide-order{
+        padding: 0px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.98px){
+    body{
+        
+        display: flexbox;
+        padding: 0px;
+        width: 100%;
+        
+    }
+    .main-content,.jumbotron,.menu,.pizza-details{
+        width: 100%;
+        
+        float: left;
+        display: flexbox;
+        
+        padding: 0px;
+        
+    }
+    .jumbotron h1{
+        text-align: center;
+        padding: 0px;
+        letter-spacing: 0px;
+    }
+    .pizza-form,.pizza-details{
+        width: 100%;
+    }
+    .hide-order{
+        padding: 0px;
+        text-align: center;
+    }
+
+
+}
