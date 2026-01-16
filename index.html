@@ -111,7 +111,22 @@
             </div>
 
         </div>
+         
+<script>
+  document.getElementById("payBtn").addEventListener("click", async () => {
+    const phone = prompt("Enter your phone (e.g., 2547XXXXXXX):");
+    const amount = 100; // set amount
 
+    const response = await fetch("/api/mpesa/stkpush", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ phone, amount })
+    });
+
+    const data = await response.json();
+    alert("STK Push sent — check your phone!");
+  });
+</script>
   
 
         <!-- The core Firebase JS SDK is always required and must be listed first -->
