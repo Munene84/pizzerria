@@ -256,6 +256,11 @@ input[type="button"]{
         padding: 0px;
         text-align: center;
     }
-
+.container {
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+    
+}
 
 }
