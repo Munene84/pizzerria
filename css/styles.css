@@ -259,11 +259,16 @@ input[type="button"]{
 .item {
   margin: 0 auto;
 }
-input[type="submit"],input[type="button"]{
-    border-radius: 25px;
-    border-color: tomato;
-    width: 20%;
-    image: url(../images/mpesa.png);
-    font-weight: bolder;
+.mpesaButton {
+  background: url(../images/mpesa.png);
+  background: #6AAE2D;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 20px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif
 }
 }
