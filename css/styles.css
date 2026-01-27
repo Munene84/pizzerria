@@ -259,7 +259,11 @@ input[type="button"]{
 .item {
   margin: 0 auto;
 }
-.mpesabutton url(../images/bg.png);
-    width: 6%;
+input[type="submit"],input[type="button"]{
+    border-radius: 25px;
+    border-color: tomato;
+    width: 20%;
+    image: url(../images/mpesa.png);
+    font-weight: bolder;
 }
 }
