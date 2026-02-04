@@ -256,6 +256,9 @@ input[type="button"]{
         padding: 0px;
         text-align: center;
     }
+    .mpesaButton {
+  margin: 0 auto;
+    }
 .item {
   margin: 0 auto;
 }
