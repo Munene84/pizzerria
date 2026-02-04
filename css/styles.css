@@ -261,7 +261,7 @@ input[type="button"]{
   margin: 0 auto;
 }
 .payment-img {
-    image: url(../images/bg.png);
+    padding-top: 170px;
     display: block;
-    width: 200px;
+    
 }
