@@ -259,11 +259,3 @@ input[type="button"]{
 .item {
   margin: 0 auto;
 }
-.mpesaButton{
-    border-radius: 25px;
-    border-color: tomato;
-    width: 20%;
-    font-weight: bolder;
-
-
-}
