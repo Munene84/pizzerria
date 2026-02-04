@@ -260,3 +260,7 @@ input[type="button"]{
 .item {
   margin: 0 auto;
 }
+.payment-footer {
+    display: block;
+    width: 200px;
+}
