@@ -260,8 +260,8 @@ input[type="button"]{
 .item {
   margin: 0 auto;
 }
-.payment-img {
-    padding-top: 170px;
-    display: block;
-    
+.mpesa {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
