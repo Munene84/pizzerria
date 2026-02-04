@@ -258,7 +258,9 @@ input[type="button"]{
     }
   
 .item {
-  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  height: 100vh;
 }
 .mpesa {
   max-width: 100%;
